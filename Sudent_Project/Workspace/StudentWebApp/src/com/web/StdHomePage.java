@@ -30,6 +30,7 @@ public class StdHomePage extends HttpServlet {
 		
 		out.println("<center>");
 		out.println("<h1>Welcome to StdHomePage</h1>");
+		out.println("<a href=''>Profile</a>");
 		out.println("</center>");
 		out.println("</body>");
 	}

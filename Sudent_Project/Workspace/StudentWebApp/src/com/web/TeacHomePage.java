@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @WebServlet("/TeacHomePage")
 public class TeacHomePage extends HttpServlet {
@@ -16,7 +17,10 @@ public class TeacHomePage extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		
-		String emailId = request.getParameter("emailId");
+//		String emailId = request.getParameter("emailId");
+		
+		HttpSession session = request.getSession(false);
+		String emailId = (String) session.getAttribute("emailId");
 		
 		out.println("<body bgcolor='lightyellow' text='green'>");
 		
@@ -30,6 +34,8 @@ public class TeacHomePage extends HttpServlet {
 		
 		out.println("<center>");
 		out.println("<h1>Welcome to TeacherHomePage</h1>");
+		out.println("<h3><a href='GetAllStds'>GetAllStudents</a> &nbsp; &nbsp;");
+		out.println("<a href='GetStdById.html'>GetStdById</a>");
 		out.println("</center>");
 		out.println("</body>");
 	}

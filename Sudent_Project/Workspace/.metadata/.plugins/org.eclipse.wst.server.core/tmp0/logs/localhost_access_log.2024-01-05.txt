@@ -1,0 +1,5 @@
+127.0.0.1 - - [05/Jan/2024:11:08:06 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [05/Jan/2024:11:08:07 +0530] "GET /StudentWebApp/Login.html HTTP/1.1" 200 549
+0:0:0:0:0:0:0:1 - - [05/Jan/2024:11:08:25 +0530] "POST /StudentWebApp/Login HTTP/1.1" 200 211
+0:0:0:0:0:0:0:1 - - [05/Jan/2024:11:08:34 +0530] "GET /StudentWebApp/Logout HTTP/1.1" 200 549
+0:0:0:0:0:0:0:1 - - [05/Jan/2024:11:08:42 +0530] "POST /StudentWebApp/Login HTTP/1.1" 200 201

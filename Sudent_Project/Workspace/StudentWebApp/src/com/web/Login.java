@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.dao.StudentDAO;
 import com.dto.Student;
@@ -23,6 +24,9 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 		
 		String emailId = request.getParameter("emailId");
 		String password = request.getParameter("password");
+		
+		HttpSession session = request.getSession(true);
+		session.setAttribute("emailId", emailId);
 		
 		out.println("<html>");
 		if (emailId.equalsIgnoreCase("Teacher") && password.equals("Teacher")) {			
