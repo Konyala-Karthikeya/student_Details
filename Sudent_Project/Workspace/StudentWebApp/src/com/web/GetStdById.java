@@ -25,7 +25,7 @@ public class GetStdById extends HttpServlet {
 		StudentDAO stdDao = new StudentDAO();
 		Student std = stdDao.getStudentById(stdId);
 
-		RequestDispatcher rd = request.getRequestDispatcher("TeacHomePage");
+		RequestDispatcher rd = request.getRequestDispatcher("TeacHomePage.jsp");
 		rd.include(request, response);
 
 		out.println("<center>");

@@ -29,9 +29,9 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 		session.setAttribute("emailId", emailId);
 		
 		out.println("<html>");
-		if (emailId.equalsIgnoreCase("Teacher") && password.equals("Teacher")) {			
+		if (emailId.equalsIgnoreCase("HR") && password.equals("HR")) {			
 			
-			RequestDispatcher rd = request.getRequestDispatcher("TeacHomePage");
+			RequestDispatcher rd = request.getRequestDispatcher("TeacHomePage.jsp");
 			rd.forward(request, response);
 			
 		} else {			
@@ -41,10 +41,13 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 			Student std = stdDao.stdLogin(emailId, password);
 			
 			if (std != null) {
-				
-				RequestDispatcher rd = request.getRequestDispatcher("StdHomePage");
-				rd.forward(request, response);
-				
+
+			    //Store Employee information(Object) under Session
+			    session.setAttribute("std", std);
+							
+			    RequestDispatcher rd = request.getRequestDispatcher("StdHomePage.jsp");
+			    rd.forward(request, response);
+							
 			} else {
 				out.println("<body bgcolor='lightyellow' text='red'>");
 				out.println("<center>");

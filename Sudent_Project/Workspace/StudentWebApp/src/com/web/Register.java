@@ -20,7 +20,7 @@ public class Register extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		
-		String stdName = request.getParameter("srdName");
+		String stdName = request.getParameter("stdName");
 		String batch = request.getParameter("batch");
 		String gender = request.getParameter("gender");
 		String emailId = request.getParameter("emailId");

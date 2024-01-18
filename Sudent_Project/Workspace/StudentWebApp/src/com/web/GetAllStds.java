@@ -24,7 +24,7 @@ public class GetAllStds extends HttpServlet {
 		StudentDAO stdDao = new StudentDAO();		
 		List<Student> stdList = stdDao.getAllStudents();
 		
-		RequestDispatcher rd = request.getRequestDispatcher("TeacHomePage");
+		RequestDispatcher rd = request.getRequestDispatcher("TeacHomePage.jsp");
 		rd.include(request, response);
 		
 		out.println("<center>");

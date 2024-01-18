@@ -1,0 +1,38 @@
+2024-01-11 14:54:00,751 [Worker-7] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-01-11 14:54:06,236 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ts:demo:0.0.1-SNAPSHOT @ D:\student_Details\Student_SpringBoot\demo\pom.xml.
+2024-01-11 14:54:11,524 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /demo/src/main/java
+2024-01-11 14:54:11,525 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /demo/src/main/resources
+2024-01-11 14:54:11,552 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /demo/src/main/resources
+2024-01-11 14:54:11,580 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /demo/src/test/java
+2024-01-11 14:54:12,769 [Worker-0] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-11 14:54:12,812 [Worker-0] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-11 14:54:12,816 [Worker-0] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\student_Details\Student_SpringBoot\demo\src\test\resources
+2024-01-11 14:54:16,919 [Worker-7] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 16 sec
+2024-01-11 14:54:17,456 [Worker-17] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-11 14:54:17,460 [Worker-17] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-11 14:54:17,466 [Worker-17] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\student_Details\Student_SpringBoot\demo\src\test\resources
+2024-01-11 14:54:40,790 [Worker-17] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-01-11 14:54:42,121 [Worker-17] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ts:demo:0.0.1-SNAPSHOT @ D:\student_Details\Student_SpringBoot\demo\pom.xml.
+2024-01-11 14:54:43,408 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /demo/src/main/java
+2024-01-11 14:54:43,409 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /demo/src/main/resources
+2024-01-11 14:54:43,409 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /demo/src/main/resources
+2024-01-11 14:54:43,410 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /demo/src/test/java
+2024-01-11 14:54:43,800 [Worker-17] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
+2024-01-11 14:54:44,812 [Worker-11] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-11 14:54:44,835 [Worker-11] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-11 14:54:44,839 [Worker-11] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\student_Details\Student_SpringBoot\demo\src\test\resources
+2024-01-11 14:55:56,410 [Worker-18] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ts:demo:0.0.1-SNAPSHOT @ D:\student_Details\Student_SpringBoot\demo\pom.xml.
+2024-01-11 14:56:02,239 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-01-11 14:56:02,240 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-01-11 14:56:02,244 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-11 14:56:02,244 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-11 14:56:02,250 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-01-11 14:56:02,250 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-01-11 14:56:02,250 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\student_Details\Student_SpringBoot\demo\src\test\resources
+2024-01-11 14:56:05,055 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-01-11 14:56:05,055 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-01-11 14:56:05,056 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-01-11 14:56:05,086 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-11 14:56:05,089 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-01-11 14:56:05,089 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-01-11 14:56:05,089 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\student_Details\Student_SpringBoot\demo\src\test\resources

@@ -1,0 +1,53 @@
+package com.ts;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.dao.StudentDao;
+import com.model.Student;
+
+@RestController
+public class StudentController {
+	
+	
+    //Implementing Dependency Injection for ProductDao 
+	@Autowired
+	StudentDao studentDao;
+	
+	@GetMapping("getAllStudents")
+	public List<Student> getAllStudents() {		
+		return studentDao.getAllStudents();
+	}
+
+	
+	//HardCoded
+		@GetMapping("getStudent")
+		public Student getProduct() {
+			Student student = new Student();
+			student.setStdId(101);
+			student.setStdName("Karthik");
+			student.setCourse("Java Full Stack");
+			student.setFees(60000.00);
+			
+			return student;
+		}
+		
+		@GetMapping("getStudents")
+		public List<Student> getStudents() {
+			
+			Student student1 = new Student(101, "Karthik", "Java Full Stack",   60000.00);
+			Student student2 = new Student(102, "Ranjith", "MERN Stack",   55000.00);
+			Student student3 = new Student(103, "Rakesh", "MEAN Stack",   45000.00);
+			
+			List<Student> studentList = new ArrayList<Student>();
+			studentList.add(student1);
+			studentList.add(student2);
+			studentList.add(student3);
+			
+			return studentList;
+		}
+}
