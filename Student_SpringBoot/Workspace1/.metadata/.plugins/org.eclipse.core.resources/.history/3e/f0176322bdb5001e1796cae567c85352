@@ -22,6 +22,7 @@ public class StudentController {
 	public List<Student> getAllStudents() {		
 		return studentDao.getAllStudents();
 	}
+
 	
 	//HardCoded
 		@GetMapping("getStudent")
