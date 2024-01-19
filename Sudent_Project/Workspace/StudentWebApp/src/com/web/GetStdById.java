@@ -23,41 +23,24 @@ public class GetStdById extends HttpServlet {
 		int stdId = Integer.parseInt(request.getParameter("stdId"));
 
 		StudentDAO stdDao = new StudentDAO();
-		Student std = stdDao.getStudentById(stdId);
-
-		RequestDispatcher rd = request.getRequestDispatcher("TeacHomePage.jsp");
-		rd.include(request, response);
-
-		out.println("<center>");
+		Student std =stdDao.getStudentById(stdId);
 
 		if (std != null) {
 
-			out.println("<table border=2>");
+			//Store the std data under request object
+			request.setAttribute("std", std);
 
-			out.println("<tr>");
-			out.println("<th>StdId</th>");
-			out.println("<th>StdName</th>");
-			out.println("<th>Batch</th>");
-			out.println("<th>Gender</th>");
-			out.println("<th>Email-Id</th>");
-			out.println("</tr>");
+			RequestDispatcher rd = request.getRequestDispatcher("GetStudentById.jsp");
+			rd.forward(request, response);
 
+		} else {
+			RequestDispatcher rd = request.getRequestDispatcher("TeacHomePage.jsp");
+			rd.include(request, response);
 
-			out.println("<tr>");
-			out.println("<td>" + std.getStdId()   + "</td>");
-			out.println("<td>" + std.getStdName() + "</td>");
-			out.println("<td>" + std.getBatch()  + "</td>");
-			out.println("<td>" + std.getGender()  + "</td>");
-			out.println("<td>" + std.getEmailId() + "</td>");
-			out.println("</tr>");
-
-
-			out.println("</table>");
-
-		} else {			
+			out.println("<center>");
 			out.println("<h1 style='color:red;'>Student Record Not Found!!!</h1>");	
+			out.println("</center>");
 		}
-		out.println("</center>");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

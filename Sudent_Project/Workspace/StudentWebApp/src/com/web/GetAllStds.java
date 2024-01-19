@@ -24,39 +24,23 @@ public class GetAllStds extends HttpServlet {
 		StudentDAO stdDao = new StudentDAO();		
 		List<Student> stdList = stdDao.getAllStudents();
 		
-		RequestDispatcher rd = request.getRequestDispatcher("TeacHomePage.jsp");
-		rd.include(request, response);
-		
-		out.println("<center>");
-		
 		if (stdList != null) {
 			
-			out.println("<table border=2>");
+			//Storing Student list under request object
+			request.setAttribute("stdList", stdList);
 			
-			out.println("<tr>");
-			out.println("<th>StdId</th>");
-			out.println("<th>StdName</th>");
-			out.println("<th>Batch</th>");
-			out.println("<th>Gender</th>");
-			out.println("<th>Email-Id</th>");
-			out.println("</tr>");
-			
-			for (Student std : stdList) {
-				out.println("<tr>");
-				out.println("<td>" + std.getStdId()   + "</td>");
-				out.println("<td>" + std.getStdName() + "</td>");
-				out.println("<td>" + std.getBatch()  + "</td>");
-				out.println("<td>" + std.getGender()  + "</td>");
-				out.println("<td>" + std.getEmailId() + "</td>");
-				out.println("</tr>");
-			}
-			
-			out.println("</table>");			
+			RequestDispatcher rd = request.getRequestDispatcher("GetAllStd.jsp");
+			rd.forward(request, response);			
 		
-		} else {			
+		} else {	
+			
+			RequestDispatcher rd = request.getRequestDispatcher("TeacHomePage.jsp");
+			rd.include(request, response);
+			
+			out.println("<center>");
 			out.println("<h1 style='color:red;'>Unable to Fetch the Student Record(s)!!!</h1>");	
-		}
-		out.println("</center>");
+			out.println("</center>");
+		}		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

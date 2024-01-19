@@ -4,8 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>TeacHomePage</title>
+<title>TCHomePage</title>
 </head>
+
 <body bgcolor='lightyellow' text='green'>
 
 		<% String emailId = (String) session.getAttribute("emailId"); %>
@@ -18,13 +19,14 @@
 		</form>
 		
 		<center>
-		<h1>Welcome to Teacher Home Page</h1>
+		<h1>Welcome to TCHomePage</h1>
 		
 		<h3><a href='GetAllStds'>GetAllStudents</a> &nbsp; &nbsp;
-		<a href='GetStdById.html'>GetStdById</a>
+		<a href='GetStdById.jsp'>GetStdById</a>
 		</h3> <br/>
 		
 		</center>
+
 
 </body>
 </html>

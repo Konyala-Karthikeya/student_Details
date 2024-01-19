@@ -17,27 +17,29 @@ public class StdHomePage extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		
-		//String emailId = request.getParameter("emailId");
+		  // String emailId = request.getParameter("emailId");
+		    
+		    HttpSession session = request.getSession(false);
+		     String emailId = (String) session.getAttribute("emailId");
+			
+		    out.println("</html>");	
+			out.println("<body bgcolor='lightyellow' text='red'>");
+			
+			//for username
+			out.println("<h3 style = 'color:red;'>Welcome " + emailId +  " !</h3>");
+			//For Logout
+			out.print("<form align='right'>");
+			out.print("<a href='StudentHomePage'>Home</a> &nbsp;");
+			out.print("<a href='Logout'>Logout</>");
+			out.print("<form>");
+
+			out.println("<center>");
+			out.println("<h1>Welcome to StudentHomePage</h1>");	
+			out.println("<h3><a href='Profile'>Profile</a></h3>");	
 		
-		HttpSession session = request.getSession(false);
-		String emailId = (String) session.getAttribute("emailId");
-		
-		out.println("<body bgcolor='lightyellow' text='green'>");
-		
-		//For UserName
-		out.print("<h3 style='color:red;'>Welcome " + emailId + "!</h3>");
-		
-		//For Logout
-		out.print("<form align='right'>");
-		out.print("<a href='StdHomePage'>Home</a> &nbsp;");
-		out.print("<a href='Logout'>Logout</>");
-		out.print("<form>");
-		
-		out.println("<center>");
-		out.println("<h1>Welcome to StdHomePage</h1>");
-		out.println("<a href='Profile'>Profile</a>");
-		out.println("</center>");
-		out.println("</body>");
+		    out.println("</center>");
+		    out.println("</body>");
+		    out.println("</html>");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
